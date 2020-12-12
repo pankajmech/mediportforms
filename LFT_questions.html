@@ -1,0 +1,157 @@
+
+	<title>Sangam Pathology</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" >
+<style>
+
+.imgholder img
+{
+	height:150px;
+	width:150px;
+}
+
+table td
+{
+	border:0 !important;
+}
+
+.input
+{
+	border:none;
+	box-shadow:0 0 5px 0 #000;
+	border-radius:5px;
+	padding:2px 5px;
+	transition:.2s;
+}
+
+.input:hover
+{
+	box-shadow:0 0 10px 0 #000;
+}
+
+.uppercase
+{
+	    text-transform: uppercase;
+}
+
+</style>
+<h1 style="text-align: center;">Liver Function Test</h1><hr>
+<div class=" container inputcontainer py-5" id="bodylayer">
+	<div class="formcontainer">
+		<form id="valform" action="./LFT_output.html" method="GET">
+           <h4>Personal Information</h4>
+			<table  class="table" width="100%">
+				<div>
+				<tr>
+					
+					<td>Name</td>
+					<td><input id ='name1' type="text" name="name1" class="input" autocomplete="off"required="true" ></td>
+					 <td>Phone No.</td>
+					<td><input id ='phone1' type="tel" pattern="[0-9]{10}" name="phone1" class="input" autocomplete="off" ></td>
+				</tr>
+				
+				<tr>
+					<td>Patient ID</td>
+					<td><input id ='patientid1' type="text" name="patientid1" class="input" autocomplete="off"></td>
+					<td>Sex</td>
+					<td><select id="sex1" name="sex1"autocomplete="off" >
+						<option value="Choose One">Choose One</option>
+						<option value="Male">Male</option>
+						<option value="Female">Female</option>
+						<option value="Others">Others</option></td>
+				
+				</tr>
+				<tr>
+					<td>Age</td>
+					<td><input id ='age1' type="number" name="age1" class="input" autocomplete="off" ></td>
+					
+				</tr>
+
+				
+                 </div>
+                 </table>
+                 <hr>
+                 <h4>Pathology Details</h4>
+                 <table class="table" width="100%">
+                 	<tr>
+                 		<td>Pathology Name</td>
+					<td><input id="pathoname1" type="text" name="pathoname1" class="input" value=""autocomplete="off"></td>
+					<td>Phone No.</td>
+					<td><input id="phonepatho" type="tel" pattern="[0-9]{10}"name="phonepatho" class="input" value=""autocomplete="off" ></td>
+
+                 	</tr>
+                 	<tr>
+                 		<td>Address</td>
+					<td><input id ='address1' type="text" name="address1" class="input" autocomplete="off"></td>
+					<td>Doctor Name</td>
+					<td><input id ='doctorname1' type="text" name="doctorname1" class="input" autocomplete="off"></td>
+                 	</tr>
+                 	<tr>
+					<td>Receive date</td>
+					<td><input id ='receivedate' type="date" name="receivedate" class="input"></td>
+					<td>Print date</td>
+					<td><input id ='printdate' type="date" name="printdate" class="input"></td>
+				</tr>
+                 </table>
+                 <hr>
+                 <h4>Bilirubin Data</h4>
+                  <table class="table" width="100%">
+                  	<tr>
+					<td>Direct(in mg/dL)</td>
+					<td><input id ='direct' type="number" step="0.001" name="direct" class="input" autocomplete="off"></td>
+					<td>Indirect(in mg/dl)</td>
+					<td><input id ='indirect' type="number" step="0.001" name="indirect" class="input" autocomplete="off"></td>
+					
+				</tr>
+				
+
+			</table>
+			<hr>
+			 <h4>Enzymes Data</h4>
+                  <table class="table" width="100%">
+                  	<tr>
+					<td>SGOT(AST)(in IU/dL)</td>
+					<td><input id ='sgot' type="number" step="0.001" name="sgot" class="input" autocomplete="off"></td>
+					<td>SGPT(APT)(in IU/dL)</td>
+					<td><input id ='sgpt' type="number" step="0.001" name="sgpt" class="input" autocomplete="off"></td>
+					
+				</tr>
+				<tr>
+					<td>Gamma GT(in IU/dL)</td>
+					<td><input id ='gamma' type="number" step="0.001" name="gamma" class="input" autocomplete="off"></td>
+					<td>ALP(in IU/dL)</td>
+					<td><input id ='alp' type="number" step="0.001" name="alp" class="input" autocomplete="off"></td>
+					
+				</tr>
+				<tr>
+					<td>LDH(in IU/dL)</td>
+					<td><input id ='ldh' type="number" step="0.001" name="ldh" class="input" autocomplete="off"></td>
+					
+					
+				</tr>
+			</table>
+			<hr>
+			 <h4>Proteins Data</h4>
+			<table class="table" width="100%">
+                    <tr>
+					<td>Albumin(in g/dL)</td>
+					<td><input id ='albumin' type="number" step="0.001" name="albumin" class="input"autocomplete="off"></td>
+					<td>Globulin(in g/dL)</td>
+					<td><input id ='globulin' type="number" step="0.001" name="globulin" class="input" autocomplete="off"></td>
+					
+				</tr>
+                    
+
+
+
+			</table>
+			<hr>
+				
+				<tr>
+					<td><input type="submit" value="Submit" name="done" class="btn btn-success btn-sm w-40"></td>
+				</tr>
+			
+
+		</form>
+	</div>
+</div>
+<script type="text/javascript" src="./LFT_main.js" defer></script>
